@@ -2,7 +2,7 @@
 
 <ul>
 
-  <li>
+  <li class= "isoCode">
     <strong>Iso code:</strong>
     <%= @language.iso_code %>
   </li>

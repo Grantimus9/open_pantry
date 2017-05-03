@@ -1,19 +1,17 @@
-<div class="jumbotron">
+<!--<div class="jumbotron">
   <h2><%= gettext "Welcome to %{name}", name: "OpenPantry" %></h2>
-</div>
+</div>-->
 
 <div class="row">
   <div class="col-lg-6">
-    <h4>Languages</h4>
-    <ul>
-      <%= for language <-  @languages do %>
-        <li>
-          <a href="<%= food_selection_path(@conn, :index, language.iso_code) %>"><%= language.native_name %></a> ( <%= language.english_name %> )
-        </li>
-      <% end %>
-      <li>
-        <a href="<%= language_path(@conn, :index) %>">... (all languages)</a>
-      </li>
-    </ul>
+    <!--<h4>Languages</h4>-->
+    <%= for language <-  @languages do %>
+      <button class="langButton">
+        <a href="<%= food_selection_path(@conn, :index, language.iso_code) %>"><%= language.native_name %></a> ( <%= language.english_name %> )
+      </button>
+    <% end %>
+    <button class = "langButton">
+      <a href="<%= language_path(@conn, :index) %>">... (all languages)</a>
+    </button>
   </div>
 </div>
