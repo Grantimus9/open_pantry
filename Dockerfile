@@ -25,3 +25,9 @@ RUN mix deps.get
 
 # Install node dependecies
 RUN cd assets/ && npm install -g yarn && yarn install && cd ..
+
+#install sass 
+FROM ruby:2.2
+RUN gem install sass
+WORKDIR /tmp
+ENTRYPOINT ["sass", "--watch", "assets/sass/node_modules:assets/css/app.css"]
