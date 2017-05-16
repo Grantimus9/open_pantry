@@ -30,4 +30,4 @@ RUN cd assets/ && npm install -g yarn && yarn install && cd ..
 FROM ruby:2.2
 RUN gem install sass
 WORKDIR /tmp
-ENTRYPOINT ["sass", "--watch", "assets/sass/node_modules:assets/css/app.css"]
+ENTRYPOINT ["sass", "--watch", "assets/sass/node_moduleskk:assets/css/app.css"]
