@@ -5,7 +5,18 @@
 @import "vendors/include-media";
 // Layout
 .container {
+  display: flex;
 }
+// Manage Stocks Page  
+.manage_pane-stocks-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.manage_pane-stock-item {
+  display: block;
+}
+
 // Food selection Layout
 .container-fluid {
   display: flex;
@@ -147,7 +158,8 @@ h6 {
 }
 
 .add_sub-svg {
-  @include fluid-type(height, $minViewWidth, $maxViewWidth, $h4Min, $h4Max );
+  // @include fluid-type(height, $minViewWidth, $maxViewWidth, $h4Min, $h4Max );
+  width: 100%;
 }
 
 

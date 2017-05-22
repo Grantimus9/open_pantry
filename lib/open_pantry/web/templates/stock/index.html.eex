@@ -8,10 +8,10 @@
       <th></th>
     </tr>
   </thead>
-  <tbody>
+  <tbody class="manage_pane-stocks-container">
 <%= for stock <- @stocks do %>
-    <tr>
-      <td><%= OpenPantry.Stock.stockable_name(stock) %></td>
+    <tr class="manage_pane-stock-item">
+      <td ><%= OpenPantry.Stock.stockable_name(stock) %></td>
 
 
       <td class="text-right">
