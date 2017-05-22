@@ -36,7 +36,7 @@
             <%= stock.weight %>
           </div-->
           <div class="js-available-quantity quantity-available">
-            <%= stock.quantity %> <%= gettext(" remaining") %>
+            <%= stock.quantity %> <%= gettext(" available") %>
           </div>
           <div class="item_control-container">
             <div class="remove-amount-add-button-container">

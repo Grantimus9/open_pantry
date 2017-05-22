@@ -53,7 +53,7 @@
         </div>
 
         <div class="tab-pane js-cart cart-container" id="cart">
-        <h3>
+        <h3 class="cart-heading">
           <%= gettext "Shopping Cart" %>
         </h3>
             

@@ -17,6 +17,8 @@
   display: block;
 }
 
+
+
 // Food selection Layout
 .container-fluid {
   display: flex;
@@ -38,6 +40,11 @@
 
 #cart {
   height: $cartHeight;
+  display: flex;
+  flex-direction: column;
+}
+.cart-heading {
+  display: block;
 }
 
 .account-action-buttons {
